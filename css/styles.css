@@ -1,0 +1,33 @@
+body{
+  background-color: #f7f7f7;
+}
+h1,h2{
+  color:#FF8C69;
+  text-align: center;
+}
+h1{
+  font-size: 72px;
+  
+
+}
+h2{
+  font-size:56px;
+  margin-bottom: 30px;
+}
+h3,li{
+  color:#84a142;
+
+}
+h4{
+  color:#5cb29e;
+}
+img{
+  display: block;
+  /* width:100%; */
+  /* padding: 50px 100px; */
+ margin:0 auto;
+
+}
+div{
+  
+}

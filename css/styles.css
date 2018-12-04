@@ -1,0 +1,56 @@
+body{
+  background-color: #f7f7f7;
+}
+h1,h2{
+  color:#FF8C69;
+  text-align: center;
+}
+h1{
+  font-size: 72px;
+  text-decoration: underline;
+  
+
+}
+h2{
+  font-size:48px;
+  margin-bottom: 30px;
+  text-decoration: italic;
+
+}
+h3,li{
+  color:#84a142;
+
+}
+h4{
+  color:#5cb29e;
+}
+
+div{
+  display:inline-block;
+
+  height: 200px;
+  font-size:28px;
+  border:black 2px solid;
+} 
+#box{
+width:100%;
+}
+
+
+#locations{
+  width:20%;
+
+}
+#contact{
+  width:20%;
+}
+#store{
+  width:20%;
+}
+img{
+  display: block;
+  /* width:100%; */
+  /* padding: 50px 100px; */
+ margin:0 auto;
+
+}

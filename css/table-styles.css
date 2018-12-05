@@ -11,8 +11,10 @@ h1, h2 {
 }
 
 table {
-	border: 10px solid #FF8C69;
-	empty-cells: hide;
+	border: 10px solid #84a142;
+  empty-cells: hide;
+  width:85%;
+  margin: 0 auto;
 }
 
 td {
@@ -23,6 +25,6 @@ td {
 }
 
 th {
-	background-color: #84a142;
+	background-color: #FF8C69;;
 	color:black;
 }

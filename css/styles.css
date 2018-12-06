@@ -1,6 +1,6 @@
 body{
-  margin-left: 15%;
-  margin-right:15%;
+  /* margin-left: 15%; */
+   /* margin-right:15%;  */
   background-color: #f7f7f7;
 }
 h1,h2{
@@ -11,7 +11,7 @@ h1,h2{
 
 }
 nav ul {
-  float: center;
+  /* float: center; */
   list-style-type: none;
 }
 nav li {
@@ -20,7 +20,7 @@ nav li {
 nav li a {
  
   height: 25px;
-  padding: 12px 18px 8px 18px;
+  padding: 12px 30px 8px 30px;
   vertical-align: middle;
 }
 h1{
@@ -36,11 +36,11 @@ h1{
 
 }
 nav{
-  margin-right:15%;
+
   border:1px black solid;
   text-align: center;
   position: fixed;
-  display:block;
+  /* display:block; */
   background-color: #f7f7f7;
   width:100%;
 
@@ -66,7 +66,7 @@ blockquote {
   font-size: 120%;
   font-style: italic;
   font-family: Georgia, Times, serif;
-  margin: 0px 0px 10px 10px;
+  margin: 0px 80px 10px 20px;
   padding: 10px;
   border-top: 1px solid #665544;
   border-bottom: 1px solid #665544;

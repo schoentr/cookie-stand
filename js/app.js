@@ -3,6 +3,7 @@
 var hours = ['6AM', '7AM', '9AM', '10AM', '11AM','12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM','7PM','8PM']
 
 var salesTable=document.getElementById('sales');
+var storeForm = document.getElementById('store-form');
 
 function Store(name,minGuest,maxGuest,avgCookie){
   this.name=name;
@@ -49,25 +50,51 @@ Store.renderHeader = function() {
     thElement.textContent = hours[i];
     headerRow.appendChild(thElement);
   } 
+  thElement =document.createElement('th');
+  thElement.textContent = 'Totals';
+  headerRow.appendChild(thElement);
   salesTable.appendChild(headerRow);
 }
 
 Store.renderFooter = function() {
   var cookiesByHour=0;
+  var totalCookies=0;
   var footerRow = document.createElement('tr');
   var tdElement = document.createElement('td');
   tdElement.textContent= 'Totals';
   footerRow.appendChild(tdElement);
   for(var x =0; x < hours.length; x++) {
     cookiesByHour=0;
-    for(var y=0; y<Store.length;y++){
+    
+    for(var y=0; y<Store.allStores.length;y++){
     var tdElement = document.createElement('td');
-    cookiesByHour +=Store.allStores[y].cookiesSold[x];  
+    cookiesByHour +=Store.allStores[y].cookiesSold[x];
+    totalCookies+=cookiesByHour;  
     }
   tdElement.textContent =cookiesByHour;  
   footerRow.appendChild(tdElement);
   }
-salesTable.appendChild(footerRow);  
+  tdElement =document.createElement('td');
+  tdElement.textContent= totalCookies;
+  footerRow.appendChild(tdElement);
+  salesTable.appendChild(footerRow);  
+}
+// }**********************
+//  Adding a new Store
+
+Store.addNewStore = function(event){
+  event.preventDefault();
+  var newName = event.target.name.value;
+  targetName=newName;
+  var newMinGuest = event.target.minGuest.value;
+  var newMaxGuest = event.target.maxGuest.value;
+  var newAvgCookie = event.target.avgCookie.value;
+  var newStore= new Store(newName, newMinGuest, newMaxGuest, newAvgCookie);
+  console.log(newName,newMinGuest,newMaxGuest)
+  salesTable.textContent= '';
+  Store.renderHeader();
+  Store.renderAllStores();
+  Store.renderFooter();
 }
 
 var pikeStreet = new Store('Pike Street',23,65,6.3);
@@ -77,16 +104,19 @@ var capitolHill = new Store(' Capitol Hill',20,38,2.3)
 var alki= new Store('Alki',2,16,4.6);
 
 
+
+
+Store.renderAllStores =function(){
+  for (var i=0; i<Store.allStores.length; i++){
+  Store.allStores[i].render();
+  } 
+}
+
 Store.renderHeader();
-pikeStreet.render();
-seaTac.render();
-capitolHill.render();
-seaCenter.render();
-alki.render();
+Store.renderAllStores();
 Store.renderFooter();
 
-
-
+storeForm.addEventListener('submit', Store.addNewStore);
 
 
 

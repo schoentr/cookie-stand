@@ -59,7 +59,7 @@ Store.renderHeader = function() {
 Store.renderFooter = function() {
   var cookiesByHour=0;
   var totalCookies=0;
-  var footerRow = document.createElement('tr');
+  var footerRow = document.createElement('tfoot');
   var tdElement = document.createElement('td');
   tdElement.textContent= 'Totals';
   footerRow.appendChild(tdElement);
@@ -85,16 +85,17 @@ Store.renderFooter = function() {
 Store.addNewStore = function(event){
   event.preventDefault();
   var newName = event.target.name.value;
-  targetName=newName;
-  var newMinGuest = event.target.minGuest.value;
-  var newMaxGuest = event.target.maxGuest.value;
-  var newAvgCookie = event.target.avgCookie.value;
+ 
+  var newMinGuest = parseInt(event.target.minGuest.value);
+  var newMaxGuest = parseInt(event.target.maxGuest.value);
+  var newAvgCookie = parseFloat(event.target.avgCookie.value);
   var newStore= new Store(newName, newMinGuest, newMaxGuest, newAvgCookie);
   console.log(newName,newMinGuest,newMaxGuest)
   salesTable.textContent= '';
   Store.renderHeader();
   Store.renderAllStores();
   Store.renderFooter();
+  console.log(Store.allStores);
 }
 
 var pikeStreet = new Store('Pike Street',23,65,6.3);

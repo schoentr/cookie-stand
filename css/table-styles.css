@@ -16,7 +16,12 @@ table {
   width:85%;
   margin: 0 auto;
 }
-
+td, th, tfoot {
+  text-align: center;
+}
+tfoot{
+  font-size: 110%;
+}
 td {
 	padding: 10px;
 	border-radius: 1px;

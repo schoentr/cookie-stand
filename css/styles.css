@@ -1,14 +1,48 @@
 body{
+  margin-left: 15%;
+  margin-right:15%;
   background-color: #f7f7f7;
 }
 h1,h2{
   color:#FF8C69;
   text-align: center;
 }
+
+
+}
+nav ul {
+  float: center;
+  list-style-type: none;
+}
+nav li {
+   display: inline;
+}
+nav li a {
+ 
+  height: 25px;
+  padding: 12px 18px 8px 18px;
+  vertical-align: middle;
+}
 h1{
+  padding-top:20px;
   font-size: 72px;
   text-decoration: underline;
-  
+
+
+}
+.store-photo{
+  height:200px;
+  float:left;
+
+}
+nav{
+  margin-right:15%;
+  border:1px black solid;
+  text-align: center;
+  position: fixed;
+  display:block;
+  background-color: #f7f7f7;
+  width:100%;
 
 }
 h2{
@@ -16,6 +50,26 @@ h2{
   margin-bottom: 30px;
   text-decoration: italic;
 
+}
+#about-title, #store-title{
+    padding-top:20px;
+}
+#about-div{
+  height:900px;
+}
+#about{
+font-size: 95%;
+}
+blockquote {
+  float: right;
+  width: 275px;
+  font-size: 120%;
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+  margin: 0px 0px 10px 10px;
+  padding: 10px;
+  border-top: 1px solid #665544;
+  border-bottom: 1px solid #665544;
 }
 li{
   color:#84a142;
@@ -30,17 +84,27 @@ h3{
 
 }
 
+
 div{
   display:block;
+  color:purple;
   height: 30px;
   font-size:28px;
-  /* border:black 2px solid; */
+   /* order:black 2px solid;  */
 } 
 #sales-link{
 padding-top: 30px;
 }
-
-
+nav{
+  float: ;
+}
+.photo-div{
+  height:250px;
+}
+#row{
+  margin-top:50px;
+  height: 300px;
+}
 /* #locations{
   
 
@@ -61,7 +125,7 @@ img{
 .column {
   text-align: center;
   float: left;
-  width: 33%;
+  width: 30%;
 }
 
 /* Clear floats after the columns */

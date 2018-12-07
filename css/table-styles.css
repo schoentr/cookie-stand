@@ -9,6 +9,42 @@ body {
 h1, h2 {
 	color: white;
 }
+td{
+  color: blue;
+}
+tr td:last-child{
+  font-size:120%;
+}
+
+tfoot td {
+  color:green;
+
+}
+tfoot td:last-child{
+  font-size: 130%;
+}
+form{
+  /* width:85%; */
+  margin-top:10px;
+  margin-left:7.5%;
+  margin-right:7.5%;
+  background-color: #f7f7f7;
+  height:100px;
+  display:block;
+  border: #84a142 5px solid;
+  text-align: center;
+}
+legend{
+font-size: 200%;
+padding:10px;
+text-align: center;
+color:#84a142;
+}
+form label:{
+  display: block;
+  text-align: left;
+
+}
 
 table {
 	border: 10px solid #84a142;

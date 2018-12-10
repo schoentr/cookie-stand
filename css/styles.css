@@ -1,103 +1,143 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
 body{
   margin-left: 15%;
   margin-right:15%;
-  background-color: #f7f7f7;
+  background-color: #dcc055;
 }
 h1,h2{
-  color:#FF8C69;
+  font-family: 'Charmonman', cursive;  
+  color: #a83928;
   text-align: center;
 }
 
+nav{
+/* width:100%; */
+  /* padding-top:20px; */
+  /* border:1px black solid; */
+  display:block;
+  background-color: #a99431;
+  font-size: 30px;
+  /* height:; */
 
 }
+
 nav ul {
-  float: center;
-  list-style-type: none;
+  text-align: center;
+   list-style-type: none;
 }
 nav li {
+  
    display: inline;
+   padding:0px 30px;
 }
 nav li a {
- 
-  height: 25px;
-  padding: 12px 18px 8px 18px;
-  vertical-align: middle;
+  text-decoration: none;
+  color:#E2D39B;
+
+}
+nav li a:hover {
+  text-decoration: none;
+  color:#a83928;
+
+}
+nav li a:active {
+  text-decoration: none;
+  color:#E2D37E;
+
 }
 h1{
-  padding-top:20px;
-  font-size: 72px;
-  text-decoration: underline;
-
-
+  font-weight:normal;
+  /* font-style: italic;  */
+  font-size: 85px;
+  /* letter-spacing: 6px; */
+  /* text-decoration: underline; */
+  margin-bottom: 0;
+}
+h2{ 
+  /* font-family: 'Open Sans', sans-serif; */
+  margin-top:0;
+  font-size:36px;
+  margin-bottom: 30px;
+  /* letter-spacing:-2px; */
 }
 .store-photo{
   height:200px;
   float:left;
 
 }
-nav{
-  margin-right:15%;
-  border:1px black solid;
-  text-align: center;
-  position: fixed;
-  display:block;
-  background-color: #f7f7f7;
-  width:100%;
+#location-contact h3{
+  margin-bottom: 0;
+}
 
-}
-h2{
-  font-size:48px;
-  margin-bottom: 30px;
-  text-decoration: italic;
-
-}
-#about-title, #store-title{
-    padding-top:20px;
-}
-#about-div{
-  height:900px;
-}
 #about{
-font-size: 95%;
+  height:500px;
+  /* border: 1px black solid; */
+  position: relative;
+  margin-left:5%;
+  margin-right:5%;
 }
-blockquote {
+
+#about p{
+  color:#645727;
+  margin-left:5%;
+font-size: 23px;
+}
+#par2{
+  padding-left:20px;
+}
+
+#about img{
+  float:left;
+  width: 500px;
+  margin-right: 30px;
+   /* position: absolute;
+  top:200px;
+  left:10; */
+}
+ #about blockquote {
   float: right;
   width: 275px;
-  font-size: 120%;
-  font-style: italic;
+  font-size: 200%;
   font-family: Georgia, Times, serif;
   margin: 0px 0px 10px 10px;
   padding: 10px;
-  border-top: 1px solid #665544;
-  border-bottom: 1px solid #665544;
+  color: #a83928;
+  border-top: 2px solid #a83928;
+  border-bottom: 2px solid #a83928;
 }
+#store-title h1{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 li{
-  color:#84a142;
+  color:#645727;
+  font-family: 'Open Sans', sans-serif;
   list-style: none;
 }
 
 h3{
-  color:#5cb29e;
-  text-decoration:underline;
+  text-align: center;
+  color:#a83928;
+  /* text-decoration:underline; */
   font-size:  42px;
   padding-bottom: 10px;
 
 }
 
 
-div{
+#location-contact{
   display:block;
-  color:purple;
   height: 30px;
   font-size:28px;
-   /* order:black 2px solid;  */
-} 
+}  
+
 #sales-link{
 padding-top: 30px;
 }
-nav{
-  float: ;
-}
+
 .photo-div{
   height:250px;
 }
@@ -107,7 +147,6 @@ nav{
 }
 /* #locations{
   
-
 }
 #contact{
   
@@ -125,12 +164,80 @@ img{
 .column {
   text-align: center;
   float: left;
-  width: 30%;
+  width: 45%;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+.photo-div p{
+  text-align:center;
+}
+
+.price{
+  color:#a83928;
+  font-size:25px;
+  text-align:center;
+}
+
+  tr td:last-child{
+    font-size:120%;
+  }
+  
+  tfoot td {
+    color:green;
+  
+  }
+  tfoot td:last-child{
+    font-size: 130%;
+  }
+  form{
+    /* width:85%; */
+    margin-top:10px;
+    margin-left:7.5%;
+    margin-right:7.5%;
+    background-color: #E2D37E;
+    height:300px;
+    display:block;
+    border: #84a142 5px solid;
+    text-align: center;
+  }
+  legend{
+  font-size: 200%;
+  padding:10px;
+  text-align: center;
+  color:#84a142;
+  }
+  form label{
+    display: block;
+    text-align: left;
+  
+  }
+  
+  table {
+    border: 10px solid #a99431;
+    empty-cells: hide;
+    width:85%;
+    margin: 0 auto;
+  }
+  td, th, tfoot {
+    text-align: center;
+  }
+  tfoot{
+    font-size: 110%;
+  }
+  td {
+    color: blue;
+    padding: 10px;
+    border-radius: 1px;
+    border: 1px solid black;
+    background: #dcc055;
+  }
+  
+  th {
+    background-color: #a83928;;
+    color:#dcc055;
+  }
+  
